@@ -26,6 +26,9 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
+plugins {
+  id("io.realm.kotlin") version "0.9.0"
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
